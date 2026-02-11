@@ -1,0 +1,25 @@
+name: Run ScraperAPI Blitz
+
+on:
+  workflow_dispatch: # Manual Trigger (Best for long heists)
+
+jobs:
+  heist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360 # ⚠️ CRITICAL: Allows job to run for the full 6-hour max
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install axios
+
+    - name: Run Mission
+      # No environment variables needed as keys are in bot.js
+      run: node bot.js
