@@ -12,7 +12,7 @@ const SCRAPER_KEYS = [
 const CONFIG = {
   OFFER_URL: 'https://t.datsk11.com/400234/8517/35267?bo=2753,2754,2755,2756&po=6456&aff_sub5=SF_006OG000004lmDN',
   WEBHOOK: 'https://discord.com/api/webhooks/1466180407790670115/_B0VJ0h6v8rGGv0evpBQJUfchddXCJOWGyKQxffiUydN9gk-tBlQwskfVQhqspaTt-fg',
-  TARGET: 1500, // Adjusted to your full mission target
+  TARGET: 743, // Adjusted to your full mission target
   REFERER: 'https://privateaccesss.netlify.app/'
 };
 
